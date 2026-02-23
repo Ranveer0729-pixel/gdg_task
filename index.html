@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Profile Explorer</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+
+  <main class="app">
+
+    <header class="header">
+      <h1 class="title">GitHub Profile Explorer</h1>
+    </header>
+
+    <section class="search">
+      <input
+        type="text"
+        class="input"
+        id="usernameInput"
+        placeholder="Enter GitHub username"
+      />
+      <button class="button" id="searchBtn">
+        Search
+      </button>
+    </section>
+
+    <section class="profile" id="profile"></section>
+
+    <section class="repos">
+      <h2 class="repos_title">Top Repositories</h2>
+      <div class="list" id="repoList"></div>
+    </section>
+
+  </main>
+
+  <div class="popup hide" id="popup">
+    <div class="box">
+      <button class="close" id="close">&times;</button>
+      <div class="text" id="text"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
